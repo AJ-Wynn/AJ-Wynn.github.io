@@ -1,0 +1,235 @@
+<!-- Used animate on scroll library -->
+<!-- Inspo: http://findmatthew.com/ -->
+<!-- When adding additional projects, adjust grid and viewport height, add delay to fade-up animation -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Personal Portfolio - Andrew Wynn</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+  <link href="https://fonts.cdnfonts.com/css/gentium-basic" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header id="header">
+    <nav id="navbar">
+      <ul>
+        <li>
+          <a href="#welcome-section" class="nav-link">HOME</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">ABOUT</a>
+        </li>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link">PORTFOLIO</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section id="welcome-section">
+    <div id="title">
+      <span class="p1">Hello, I'm</span>
+      <span class="p2">Andrew Wynn</span>
+      <br />
+      <span class="p3">Entry Level Software Developer</span>
+      <div class="arrow-button">
+        <a href="#about" class="view-more">View my
+          work<span class="arrow"><img src="https://iili.io/J0VgcFt.png" width="16px" </span></a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script>
+      VANTA.TOPOLOGY({
+        el: "#welcome-section",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+      })
+    </script>
+    <h1 class="hidden">.</h1>
+  </section>
+  <section id="about">
+    <div data-aos="fade-right" data-aos-duration="1000">
+      <h1>ABOUT</h1>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+      <hr class="about-separator" />
+    </div>
+    <h2>Experience in:</h2>
+    <div class="flex-container">
+      <div class="hexagon-plus-text" data-aos="fade-right" data-aos-duration="500" data-aos-delay="0">
+        <div class="hexagon-container flutter">
+          <img src="https://iili.io/JXIfmSR.png" alt="flutter-logo">
+        </div>
+        <p class="p1">Flutter</p>
+      </div>
+      <div class="hexagon-plus-text" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
+        <div class="hexagon-container javascript">
+          <img src="https://iili.io/J0XnvqJ.png" alt="javascript-logo">
+        </div>
+        <p class="p2">Javascript</p>
+      </div>
+      <div class="hexagon-plus-text" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+        <div class="hexagon-container python">
+          <img src="https://iili.io/J0XCAwF.png" alt="python-logo">
+        </div>
+        <p>Python</p>
+      </div>
+      <div class="hexagon-plus-text" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+        <div class="hexagon-container html">
+          <img src="https://iili.io/J0X53Ug.png" alt="html-logo">
+        </div>
+        <p class="p3">HTML</p>
+      </div>
+
+      <div class="hexagon-plus-text" data-aos="fade-right" data-aos-duration="500" data-aos-delay="400">
+        <div class="hexagon-container css">
+          <img src="https://iili.io/J0X7Un2.png" alt="css-logo">
+        </div>
+        <p class="p4">CSS</p>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div data-aos="fade-left" data-aos-duration="1000">
+      <h1>PROJECTS</h1>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+      <hr class="about-separator" />
+    </div>
+    <div class="projects-grid">
+      <!-- first card -->
+      <div class="card-wrapper one" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+        <div class="card-top project-tile">
+          <img class="project-image" src="https://iili.io/JXR6MDQ.png" />
+        </div>
+        <div class="card-bottom">
+          <span class="top-text">Task Management App</span><br>
+          <span class="bottom-text">Flutter</span>
+          <br>
+          <a href="https://github.com/AJ-Wynn/flutter-applications/tree/main/task_management_app" target="_blank">
+            <button class="project-button">Full Project</button>
+          </a>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="card-wrapper two" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class="card-top project-tile">
+          <img class="project-image" src="https://iili.io/J0knHyG.png" />
+        </div>
+        <div class="card-bottom">
+          <span class="top-text">Product Landing Page<br>Clone</span><br>
+          <span class="bottom-text">HTML / CSS / JavaScript</span>
+          <br>
+          <a href="https://codepen.io/AJ-Wynn/full/ZEPoQgK" target="_blank">
+            <button class="project-button">Full Project</button>
+          </a>
+        </div>
+      </div>
+      <!-- third card -->
+      <div class="card-wrapper three" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="card-top project-tile">
+          <img class="project-image" src="https://iili.io/J0kz19e.png" />
+        </div>
+        <div class="card-bottom">
+          <span class="top-text">Tribute Page</span><br>
+          <span class="bottom-text">HTML / CSS</span>
+          <br>
+          <a href="https://codepen.io/AJ-Wynn/full/XWGqWmG" target="_blank">
+            <button class="project-button">Full Project</button>
+          </a>
+        </div>
+      </div>
+      <!-- fourth card -->
+      <div class="card-wrapper four" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="card-top project-tile">
+          <img class="project-image" src="https://iili.io/J0kTLjs.png" />
+        </div>
+        <div class="card-bottom">
+          <span class="top-text">Survey Form</span><br>
+          <span class="bottom-text">HTML / CSS</span>
+          <br>
+          <a href="https://codepen.io/AJ-Wynn/full/JjzvjPg" target="_blank">
+            <button class="project-button">Full Project</button>
+          </a>
+        </div>
+      </div>
+      <!-- fifth card -->
+      <div class="card-wrapper five" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <div class="card-top project-tile">
+          <img class="project-image" src="https://iili.io/J0kRoTF.png" />
+        </div>
+        <div class="card-bottom">
+          <span class="top-text">Technical Documentation<br> Page Clone</span><br>
+          <span class="bottom-text">HTML / CSS</span>
+          <br>
+          <a href="https://codepen.io/AJ-Wynn/full/vYPjLPv" target="_blank">
+            <button class="project-button">Full Project</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="show-all">
+      <a href="https://codepen.io/AJ-Wynn" target="_blank">
+        <button class="show-all-button">Show all &#10095;</button>
+      </a>
+    </div>
+
+  </section>
+  <section id="contact">
+    <div data-aos="fade-right" data-aos-duration="1000">
+      <h1>CONTACT</h1>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+      <hr class="about-separator" />
+    </div>
+    <div class="contact-container" data-aos="fade-up" data-aos-duration="1000">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <input type="hidden" name="access_key" value="01bba46e-44f6-48d5-bb6c-3169a84568f5">
+        <input type="text" name="name" placeholder="Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Enter Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <div class="submit-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+  <footer>
+    <div class="links-wrap">
+      <a id="profile-link" target="_blank" href="https://github.com/AJ-Wynn" class="fa fa-github fa-2x"></a>
+      <a target="_blank" href="mailto:andrew12.wynn@gmail.com" class="fa fa-envelope-o fa-2x"></a>
+      <a target="_blank" href="https://www.linkedin.com/in/andrew-wynn-330770157/" class="fa fa-linkedin fa-2x"></a>
+      <a target="_blank" href="https://www.freecodecamp.org/fccfb6b9b6a-a215-4b58-93eb-713baa5cb345" class="fa fa-free-code-camp fa-2x"></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
